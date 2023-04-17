@@ -7,8 +7,12 @@ const author = document.querySelector(".author")
 const header = document.querySelectorAll("h1")
 const description = document.querySelectorAll(".info")
 const btn = document.querySelectorAll(".link-btn")
+const icon = document.querySelector(".fa-solid")
 
 const changeTheme = () => {
+  icon.classList.toggle("fa-sun")
+  icon.classList.toggle("fa-moon")
+
   nav.classList.toggle("dark-div-background")
   footer.classList.toggle("dark-div-background")
   body.classList.toggle("dark-background")
